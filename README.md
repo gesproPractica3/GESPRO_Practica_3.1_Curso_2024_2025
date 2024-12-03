@@ -1,23 +1,12 @@
-![header](https://cloud.githubusercontent.com/assets/6546265/22174630/785cdf04-dfe3-11e6-8cf4-024e8dc1c051.png)
 
-[![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com)
-[![Build Status](https://travis-ci.org/davidmigloz/go-bees.svg?branch=master)](https://travis-ci.org/davidmigloz/go-bees)
-[![codecov](https://codecov.io/gh/davidmigloz/go-bees/branch/master/graph/badge.svg)](https://codecov.io/gh/davidmigloz/go-bees)
-[![Code Climate](https://codeclimate.com/github/davidmigloz/go-bees/badges/gpa.svg)](https://codeclimate.com/github/davidmigloz/go-bees)
-[![SonarQube](https://sonarqube.com/api/badges/gate?key=go-bees)](https://sonarqube.com/component_measures/?id=go-bees)
-[![Dependency Status](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33)
-[![Documentation Status](https://readthedocs.org/projects/go-bees/badge/?version=develop)](http://go-bees.readthedocs.io/es/develop/?badge=develop)
+A continuación voy a describir los siguientes pasos para llevar a cabo el cambio, subida y actualización de archivos
+tanto en github, como en kraken.
 
-## License
-
-Copyright (c) 2016 - 2017 David Miguel Lozano
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+1- posicionarse en commit del gitkraken original y hacer un hard discard para ponerlo en modo local con tu contenido
+2- asegurarse de estar al día en master y todos los hilos(github y gitkraken)
+3- crear rama a partir de la tarea del archivo inicial (en este caso go bees)
+4- ir a la rama local y crear un branch (en github)
+5- se copian los archivos de inicio en la carpeta del proyecto local (sin .git)
+6- git stash all + commit (actualizar y crear branch en gitkraken, haciendo un stage all changes)
+7- git fecth all(para asegurar estar al día en gitkraken)+ git pull (para bajar todo de github a local)
+8- fetch y pull finales en gitkraken desde el branch creado
